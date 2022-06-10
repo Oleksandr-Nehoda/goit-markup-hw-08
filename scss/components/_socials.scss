@@ -1,0 +1,63 @@
+
+/* Іконки соц-мереж */
+
+ .socials {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .socials__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #afb1b8;
+    background-color: #ffffff;
+  
+    transition-property: color, background-color;
+    transition-duration: var(--time);
+    transition-timing-function: var(--cubic);
+
+    &:hover,
+    &:focus {
+    color: #ffffff;
+    background-color: var(--accent-text-cl);
+  }
+  }
+  
+  .socials__icon,
+  .socials__icon--darck {
+    fill: currentColor;
+  }
+
+  .socials__link--darck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+    transition-property: background-color;
+    transition-duration: var(--time);
+    transition-timing-function: var(--cubic);
+
+    &:hover,
+    &:focus {
+    background-color: var(--accent-text-cl);
+  }
+  }
+  
+
+  

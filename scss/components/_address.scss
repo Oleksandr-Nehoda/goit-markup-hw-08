@@ -1,0 +1,39 @@
+  .address {
+    font-style: normal;
+  }
+  
+  .address__residential {
+    margin-top: 0;
+    margin-bottom: 9px;
+  
+    font-size: 14px;
+    line-height: 1.71em;
+    color: #ffffff;
+  }
+  
+  .address__list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .address__item:first-child {
+    margin-bottom: 9px;
+  }
+  
+  .address__link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71em;
+    color: rgba(255, 255, 255, 0.6);
+  
+    transition-property: color;
+    transition-duration: var(--time);
+    transition-timing-function: var(--cubic);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-text-cl);
+  }
+  }
+  
+  
