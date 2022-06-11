@@ -4,11 +4,15 @@
   
   .address__residential {
     margin-top: 0;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   
     font-size: 14px;
     line-height: 1.71em;
     color: #ffffff;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }    
   }
   
   .address__list {
@@ -17,7 +21,12 @@
   }
   
   .address__item:first-child {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }    
+    
   }
   
   .address__link {

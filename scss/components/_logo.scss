@@ -5,27 +5,37 @@
   
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19em;
+    font-size: 24px;
+    line-height: 1.17em;
     color: var(--accent-text-cl);
 
     &--accent {
         color: var(--title-text-cl);
       }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19em;
+      }  
   }
   
   .footer-logo {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19em;
+    font-size: 24px;
+    line-height: 1.17em;
     color: var(--accent-text-cl);
 
     &__part--accent {
         color: #ffffff;
       }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19em;
+    }  
   }
   
