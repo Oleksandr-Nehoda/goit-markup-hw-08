@@ -37,10 +37,16 @@
   }
   
   .form__text-policy {
-    margin-left: 7px;
+    margin-left: 5px;
     text-align: left;
-    font-size: 14px;
-    line-height: 1.71em;
+    font-size: 12px;
+    line-height: 1.17em;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71em;
+      margin-left: 7px;
+    }
   }
   
   .form__policy-link {
