@@ -1,0 +1,113 @@
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right:auto;
+    padding: 48px 20px;
+    width: 100%;
+    min-height: 796px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fff;
+    
+    transform: translateX(-105%);
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: var(--cubic);
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+        padding: 48px 40px;
+       }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+       }
+
+    &.is-open {
+        
+        transform: translateX(-4%);
+        z-index: 1;
+    }
+}
+
+.mobile-nav__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mobile-nav__link {
+font-weight: 500;
+font-size: 40px;
+line-height: 1.17em;
+letter-spacing: 0.02em;
+
+color: var(--title-text-cl);
+
+&--active {
+    color: var(--accent-text-cl);
+}
+}
+
+.mobile-cont {
+    margin-top: auto;
+    margin-bottom: 64px;
+
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17em;
+        letter-spacing: 0.02em;
+        
+        color: var(--main-text-cl);
+        }
+
+    &__link--accent {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18em;
+        letter-spacing: 0.02em;
+        
+        color: var(--accent-text-cl);
+    }   
+}
+
+
+
+.mobile-socials {
+    display: flex;  
+
+    &__link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22em;
+        letter-spacing: 0.02em;
+
+        color: var(--accent-text-cl);
+
+        @media screen and (max-width: 400px) {
+            font-size: 16px;
+           }
+        @media screen and (max-width: 360px) {
+            font-size: 14px;
+           }
+        @media screen and (max-width: 330px) {
+            font-size: 13px;
+           }
+    }
+
+    &__item:not(:last-child) {
+        padding: 0 10px 0 0;
+        border-right: 1px solid rgba(33, 33, 33, 0.2) ;
+    }
+
+    &__item:not(:first-child) {
+       margin-left: 10px;
+    }
+}

@@ -1,7 +1,9 @@
 .header {
+    position: relative;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #ececec;
+    
   }
   
   .header__conteiner {
@@ -12,13 +14,61 @@
   .header__navigation {
     display: flex;
     align-items: center;
+    
+
+    @media screen and (max-width: 767px) {
+      justify-content: space-between;
+      width: 100%;
+     }
   }
+
+  // Кнопка моб-меню
+  
+  .mob-but-menu__icon-close {
+    display: none;
+  }
+
+  .mob-but-menu {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 10;
+
+    transition-property: fill;
+    transition-duration: var(--time);
+    transition-timing-function: var(--cubic);
+  
+    &:hover,
+    &:focus {
+      fill: var(--accent-text-cl)
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+     }
+
+     &.is-open .mob-but-menu__icon-close{
+      display: block;
+     }
+     &.is-open .mob-but-menu__icon-burger{
+      display: none;
+     }
+    }
+
+  // Навігація-контакти таблетки і декстопа
   
   .header__list {
     margin: 0;
     padding: 0;
     display: flex;
+
+    @media screen and (max-width: 767px) {
+     display: none;
+    }
   }
+
   .header__item:not(:last-child) {
     margin-right: 50px;
   }
@@ -69,16 +119,27 @@
     padding: 0;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+     }
+
+     @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-direction: column;
+      align-items: flex-start;
+     }
+
+     @media screen and (min-width: 1200px)  {
+      &__item:last-child {
+        margin-left: 50px;
+      }
+     }
   }
-  .contacts__item:last-child {
-    margin-left: 50px;
-  }
-  
+
   .contacts__link {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14em;
@@ -93,7 +154,12 @@
     &:focus {
       color: var(--accent-text-cl);
     }
-  }
+
+    @media screen and (min-width: 1200px)  {
+      padding-top: 32px;
+      padding-bottom: 32px;
+}
+}
   
   .contacts__icon {
     margin-right: 10px;

@@ -30,15 +30,17 @@
   
   .modal-wrapper {
     padding: 40px;
-    max-width: 450px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
 
     @media screen and (min-width: 768px) {
       position: absolute;
       left: 50%;
       top: 50%;
-      width: 450px;
       transform: translate(-50%, -50%);
     }
    
@@ -46,8 +48,6 @@
       width: 528px;
     }
     
-  
-  
     border-radius: 4px;
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
