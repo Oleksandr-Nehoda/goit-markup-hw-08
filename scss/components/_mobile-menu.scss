@@ -4,20 +4,20 @@
     left: auto;
     right:auto;
     padding: 48px 20px;
-    width: 100%;
+    width: 101%;
     min-height: 796px;
     display: flex;
     flex-direction: column;
 
     background-color: #fff;
     
-    transform: translateX(-105%);
+    transform: translateX(-135%);
     transition-property: transform;
     transition-duration: 300ms;
     transition-timing-function: var(--cubic);
 
     @media screen and (min-width: 480px) {
-        max-width: 480px;
+        max-width: 482px;
         padding: 48px 40px;
        }
 
@@ -27,7 +27,7 @@
 
     &.is-open {
         
-        transform: translateX(-4%);
+        transform: translateX(-3.5%);
         z-index: 1;
     }
 }

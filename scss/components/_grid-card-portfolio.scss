@@ -1,17 +1,40 @@
   .portfolio {
-    margin: -15px;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+      margin: -15px;
+      display: flex;
+      flex-wrap: wrap;
+     }
+
+    
   }
   
   .portfolio__item {
-    width: 370px;
-    margin: 15px;
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+     }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 60px)/2);
+      margin: 15px;
+     }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 90px)/3);
+     }
+
+     
+    
+    
   }
   
   .card {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition-property: box-shadow;
     transition-duration: var(--time);
     transition-timing-function: var(--cubic);
@@ -38,6 +61,7 @@
   
   .card__img {
     display: block;
+    width: 100%;
   }
   
   .card__text {
@@ -63,6 +87,7 @@
   }
   
   .card__description {
+    flex-grow: 1;
     padding: 20px 24px;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
