@@ -28,14 +28,14 @@
           <a class="logo" href="./index.html" lang="en"
             >Web<span class="logo-span logo-span--accent" lang="en">Studio</span></a
           >
-          <button class="mob-but-menu" type="button" aria-expanded="false" data-menu-button>
+          <button class="mob-but-menu" type="button" aria-expanded="false" aria-controls="menu-coneiner" data-menu-button>
             <svg class="mob-but-menu__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
               <use class="mob-but-menu__icon-burger" href="./images/icons.svg#burger-menu"></use>
               <use class="mob-but-menu__icon-close" href="./images/icons.svg#close-mobile-menu"></use>
             </svg>
           </button>
       <!-- Мобільне меню -->
-        <div class="mobile-menu" data-menu>
+        <div class="mobile-menu" id="menu-coneiner" data-menu>
           <ul class="mobile-nav">
             <li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__link--active" href="./index.html">Студия</a></li>
             <li class="mobile-nav__item"><a class="mobile-nav__link" href="./portfolio.html">Портфолио</a></li>
@@ -216,7 +216,12 @@
             <li class="specialty__item">
               <img
                 class="specialty__img"
-                src="./images/examples-of-works/img-examples-of-works-1.jpg"
+                loading="lazy"
+                srcset="
+                ./images/examples-of-works/works-1__lg.jpg 370w,
+                ./images/examples-of-works/works-1__lg@2x.jpg 740w" 
+                sizes="370px"
+                src="./images/examples-of-works/works-1__lg.jpg"
                 alt="кто-то набирает на клавиатуре код разработки, который виден на экране монитора"
                 width="370"
                 height="294"
@@ -226,7 +231,12 @@
             <li class="specialty__item">
               <img
                 class="specialty__img"
-                src="./images/examples-of-works/img-examples-of-works-2.jpg"
+                loading="lazy"
+                srcset="
+                ./images/examples-of-works/works-2__lg.jpg 370w,
+                ./images/examples-of-works/works-2__lg@2x.jpg 740w" 
+                sizes="370px"
+                src="./images/examples-of-works/works-2__lg.jpg"
                 alt="женщина с телефоном в руке, сидящая перед ноутбуком, на экране которого изображены примеры верстки для мобильных устройств"
                 width="370"
                 height="294"
@@ -236,7 +246,12 @@
             <li class="specialty__item">
               <img
                 class="specialty__img"
-                src="./images/examples-of-works/img-examples-of-works-3.jpg"
+                loading="lazy"
+                srcset="
+                ./images/examples-of-works/works-3__lg.jpg 370w,
+                ./images/examples-of-works/works-3__lg@2x.jpg 740w" 
+                sizes="370px"
+                src="./images/examples-of-works/works-3__lg.jpg"
                 alt="кто-то держит в руке планшет, на котором изображена гамма цветных градиентов, в другой руке стилус"
                 width="370"
                 height="294"
@@ -254,11 +269,21 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/foto-team/foto-1.jpg"
+                loading="lazy"
+                srcset="
+                ./images/foto-team/team-1__sm.jpg 450w,
+                 ./images/foto-team/team-1__sm@2x.jpg 900w,
+                  ./images/foto-team/team-1__md.jpg 354w,
+                   ./images/foto-team/team-1__md@2x.jpg 708w,
+                   ./images/foto-team/team-1__lg.jpg 270w,
+                   ./images/foto-team/team-1__lg@2x.jpg 540w " 
+                   sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw "
+                src="./images/foto-team/team-1__sm.jpg"
                 alt="фото мужчины"
-                width="270"
-                height="260"
+                width="100%" 
+                
               />
+          
               <div class="team__description">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__profession" lang="en">Product Designer</p>
@@ -322,10 +347,19 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/foto-team/foto-2.jpg"
+                loading="lazy"
+                srcset="
+                ./images/foto-team/team-2__sm.jpg 450w,
+                 ./images/foto-team/team-2__sm@2x.jpg 900w,
+                  ./images/foto-team/team-2__md.jpg 354w,
+                   ./images/foto-team/team-2__md@2x.jpg 708w,
+                   ./images/foto-team/team-2__lg.jpg 270w,
+                   ./images/foto-team/team-2__lg@2x.jpg 540w " 
+                   sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw "
+                src="./images/foto-team/team-2__sm.jpg"
                 alt="фото женщины"
-                width="270"
-                height="260"
+                width="100%"
+               
               />
               <div class="team__description">
                 <h3 class="team__name">Ольга Репина</h3>
@@ -389,10 +423,19 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/foto-team/foto-3.jpg"
+                loading="lazy"
+                srcset="
+                ./images/foto-team/team-3__sm.jpg 450w,
+                 ./images/foto-team/team-3__sm@2x.jpg 900w,
+                  ./images/foto-team/team-3__md.jpg 354w,
+                   ./images/foto-team/team-3__md@2x.jpg 708w,
+                   ./images/foto-team/team-3__lg.jpg 270w,
+                   ./images/foto-team/team-3__lg@2x.jpg 540w " 
+                   sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw "
+                src="./images/foto-team/team-3__sm.jpg"
                 alt="фото мужчины"
-                width="270"
-                height="260"
+                width="100%"
+                
               />
               <div class="team__description">
                 <h3 class="team__name">Николай Тарасов</h3>
@@ -456,10 +499,19 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/foto-team/foto-4.jpg"
+                loading="lazy"
+                srcset="
+                ./images/foto-team/team-4__sm.jpg 450w,
+                 ./images/foto-team/team-4__sm@2x.jpg 900w,
+                  ./images/foto-team/team-4__md.jpg 354w,
+                   ./images/foto-team/team-4__md@2x.jpg 708w,
+                   ./images/foto-team/team-4__lg.jpg 270w,
+                   ./images/foto-team/team-4__lg@2x.jpg 540w " 
+                   sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw "
+                src="./images/foto-team/team-4__sm.jpg"
                 alt="фото мужчины"
-                width="270"
-                height="260"
+                width="100%"
+                
               />
               <div class="team__description">
                 <h3 class="team__name">Михаил Ермаков</h3>
@@ -711,6 +763,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

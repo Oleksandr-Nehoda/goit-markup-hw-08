@@ -38,7 +38,7 @@
   
   .form__text-policy {
     margin-left: 5px;
-    text-align: left;
+    text-align: center;
     font-size: 12px;
     line-height: 1.17em;
 
@@ -50,5 +50,6 @@
   }
   
   .form__policy-link {
+    text-decoration: underline;
     color: var(--accent-text-cl);
   }

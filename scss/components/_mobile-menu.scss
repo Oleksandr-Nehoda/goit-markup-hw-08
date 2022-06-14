@@ -4,7 +4,7 @@
     left: auto;
     right:auto;
     padding: 48px 20px;
-    width: 101%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
     transition-timing-function: var(--cubic);
 
     @media screen and (min-width: 480px) {
-        max-width: 482px;
+        max-width: 485px;
         padding: 48px 40px;
        }
 
@@ -27,7 +27,7 @@
 
     &.is-open {
         
-        transform: translateX(-3.5%);
+        transform: translateX(-3.6%);
         z-index: 1;
     }
 }
@@ -77,8 +77,6 @@ color: var(--title-text-cl);
         color: var(--accent-text-cl);
     }   
 }
-
-
 
 .mobile-socials {
     display: flex;  

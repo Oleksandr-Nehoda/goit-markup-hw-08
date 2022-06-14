@@ -12,10 +12,10 @@
     margin-right: auto;
     padding-top: 118px;
     padding-bottom: 118px;
-    max-width: 480px;
     height: 100%;
     text-align: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-color: var(--dark-bg-cl);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/hero-background__sm.jpg);
@@ -28,7 +28,7 @@
     }
 
     @media screen and (min-width: 768px) {
-      max-width: 768px;
+      // max-width: 768px;
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/hero-background__md.jpg);
 
