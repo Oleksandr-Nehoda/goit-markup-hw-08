@@ -65,6 +65,9 @@
     top: 0;
     left: 0;
   
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 63px 24px;
     width: 100%;
@@ -80,6 +83,14 @@
     transition-property: transform;
     transition-duration: var(--time);
     transition-timing-function: var(--cubic);
+
+    @media screen and (max-width: 400px) {
+      font-size: 16px; 
+      }
+
+    @media screen and (max-width: 350px) {
+      font-size: 14px;
+     }
   }
   
   .card__description {
