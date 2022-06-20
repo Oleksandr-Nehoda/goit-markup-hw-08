@@ -40,8 +40,7 @@
     transition-duration: var(--time);
     transition-timing-function: var(--cubic);
   
-    &:hover,
-    &:focus {
+    &:hover {
       fill: var(--accent-text-cl)
     }
 
